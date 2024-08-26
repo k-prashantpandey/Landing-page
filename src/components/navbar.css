@@ -1,0 +1,92 @@
+    .navbar{
+        height: 5rem;
+        /* width: 100vw; */
+        max-width: 100rem;
+        margin: 0 auto;
+        /* padding: 1rem 2rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+}
+
+.web{
+    display: flex;
+   align-items: center; 
+   justify-content: center;
+}
+
+.text{
+    margin-left: 0.6rem;
+    font-weight: 900;
+}
+
+.logo{
+    vertical-align: top;
+    position: static ;
+    object-fit: cover;
+    height: 3em;
+    width: 3rem;
+ }
+
+ @media(prefers-reduced-motion: no-preference){
+    .logo{
+    animation: logo-spin infinite 8s linear;
+    }
+}
+
+@keyframes logo-spin{
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+.nav-links-item{
+    margin: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.btn1{
+margin: 2rem;
+border: none;
+font-weight: bold;
+}
+
+.btn2{
+    
+    background-color: #3a393c;
+    color: rgb(255, 255, 254);
+    height: 1.5rem;
+    width: 4rem;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+    .mobMenu{
+        display: flex;
+    }
+
+    .btns{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .mobMenu{
+        display: flex;
+    }
+
+    .btns{
+        display: none;
+    }
+}
